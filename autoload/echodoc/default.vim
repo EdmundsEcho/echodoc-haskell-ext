@@ -108,6 +108,10 @@ function! echodoc#default#make_cache(filetype) abort
       endfor
 
       let v_comp.args = args
+
+    elseif a:filetype ==# 'haskell'
+      " Use ghc-mod or hoogle command
+
     elseif a:filetype ==# 'ruby'
       " Use ri command
     endif
