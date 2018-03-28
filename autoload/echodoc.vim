@@ -206,3 +206,4 @@ function! s:display(echodoc, filetype) abort
 endfunction
 
 call echodoc#register('ruby', echodoc#ruby#get())
+call echodoc#register('haskell', echodoc#haskell#get())
